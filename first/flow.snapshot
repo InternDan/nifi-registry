@@ -1,0 +1,100 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ ],
+        "controllerServices" : [ ],
+        "funnels" : [ ],
+        "identifier" : "bf6c501d-9e6b-31c4-ac1a-cccfa3a867dc",
+        "inputPorts" : [ ],
+        "labels" : [ ],
+        "name" : "group",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 384.0,
+          "y" : 144.0
+        },
+        "processGroups" : [ {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "funnels" : [ ],
+          "groupIdentifier" : "bf6c501d-9e6b-31c4-ac1a-cccfa3a867dc",
+          "identifier" : "fa77a036-fa99-3c0f-9f26-fcc1effdb238",
+          "inputPorts" : [ ],
+          "labels" : [ ],
+          "name" : "flow",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 406.0,
+            "y" : 172.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ {
+            "autoTerminatedRelationships" : [ ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-stateful-analysis-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "fa77a036-fa99-3c0f-9f26-fcc1effdb238",
+            "identifier" : "0abff90f-a19e-32f3-94f4-11a5f909fb21",
+            "name" : "AttributeRollingWindow",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 381.0,
+              "y" : 170.0
+            },
+            "properties" : { },
+            "propertyDescriptors" : {
+              "Value to track" : {
+                "displayName" : "Value to track",
+                "identifiesControllerService" : false,
+                "name" : "Value to track",
+                "sensitive" : false
+              },
+              "Time window" : {
+                "displayName" : "Time window",
+                "identifiesControllerService" : false,
+                "name" : "Time window",
+                "sensitive" : false
+              },
+              "Sub-window length" : {
+                "displayName" : "Sub-window length",
+                "identifiesControllerService" : false,
+                "name" : "Sub-window length",
+                "sensitive" : false
+              }
+            },
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.stateful.analysis.AttributeRollingWindow",
+            "yieldDuration" : "1 sec"
+          } ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { }
+        } ],
+        "processors" : [ ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { }
+    }
+  }
+}
