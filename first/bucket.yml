@@ -1,5 +1,5 @@
 flows:
-  24f22921-914a-4ea0-b28c-5ef48e52f473: {ver: 1, file: flow.snapshot, comments: '',
-    author: anonymous, created: 1619534579698, flowName: flow, flowDesc: ''}
+  24f22921-914a-4ea0-b28c-5ef48e52f473: {ver: 2, file: flow.snapshot, comments: '',
+    author: anonymous, created: 1619534934563, flowName: flow, flowDesc: ''}
 layoutVer: 1
 bucketId: 2b2a3383-27df-4edf-9457-c3721fc9c5b5

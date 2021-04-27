@@ -11,14 +11,14 @@
         "connections" : [ ],
         "controllerServices" : [ ],
         "funnels" : [ ],
-        "identifier" : "bf6c501d-9e6b-31c4-ac1a-cccfa3a867dc",
+        "identifier" : "b137ac77-8130-3d9c-8dcb-a138f574d769",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "group",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 384.0,
-          "y" : 144.0
+          "x" : 631.0,
+          "y" : 230.0
         },
         "processGroups" : [ {
           "comments" : "",
@@ -26,7 +26,7 @@
           "connections" : [ ],
           "controllerServices" : [ ],
           "funnels" : [ ],
-          "groupIdentifier" : "bf6c501d-9e6b-31c4-ac1a-cccfa3a867dc",
+          "groupIdentifier" : "b137ac77-8130-3d9c-8dcb-a138f574d769",
           "identifier" : "fa77a036-fa99-3c0f-9f26-fcc1effdb238",
           "inputPorts" : [ ],
           "labels" : [ ],
@@ -89,7 +89,71 @@
           "remoteProcessGroups" : [ ],
           "variables" : { }
         } ],
-        "processors" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.11.4"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b137ac77-8130-3d9c-8dcb-a138f574d769",
+          "identifier" : "cf6a0deb-b7d1-36d2-be90-8c1cc355e044",
+          "name" : "AttributesToJSON",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 8.0,
+            "y" : 216.0
+          },
+          "properties" : {
+            "Destination" : "flowfile-attribute",
+            "Null Value" : "false",
+            "Include Core Attributes" : "true"
+          },
+          "propertyDescriptors" : {
+            "attributes-to-json-regex" : {
+              "displayName" : "Attributes Regular Expression",
+              "identifiesControllerService" : false,
+              "name" : "attributes-to-json-regex",
+              "sensitive" : false
+            },
+            "Destination" : {
+              "displayName" : "Destination",
+              "identifiesControllerService" : false,
+              "name" : "Destination",
+              "sensitive" : false
+            },
+            "Null Value" : {
+              "displayName" : "Null Value",
+              "identifiesControllerService" : false,
+              "name" : "Null Value",
+              "sensitive" : false
+            },
+            "Attributes List" : {
+              "displayName" : "Attributes List",
+              "identifiesControllerService" : false,
+              "name" : "Attributes List",
+              "sensitive" : false
+            },
+            "Include Core Attributes" : {
+              "displayName" : "Include Core Attributes",
+              "identifiesControllerService" : false,
+              "name" : "Include Core Attributes",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.AttributesToJSON",
+          "yieldDuration" : "1 sec"
+        } ],
         "remoteProcessGroups" : [ ],
         "variables" : { }
       },
